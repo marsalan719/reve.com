@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rêve</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/homeStyle.css" />
+    <link rel="stylesheet" href="../styles/headerStyle.css">
+    <link rel="stylesheet" href="../styles/footerStyle.css" />
+    <link
+      rel="icon"
+      href="../images/logoWhite.png"
+      type="image/x-icon"
+      sizes="64x64"
+    />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <div class="header">
+        <div class="logo">
+          <a href="../pages/home.html"
+          ><img src="../images/logoWhite.png" alt="Rêve Logo"
+        /></a>
+        <input type="search" name="search"  class="searchBox" id="search" placeholder="What are you looking for?" onkeypress="searchProducts(event)">
+        </div>
+        <div class="menu">
+          <ul class="menupoints">
+            <li><a href="./login.html">Login/Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="slider-main">
+      <div class="slider">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <div class="slides" id="slidesContainer">
+            <img src="../images/banner1.png" alt="Slide 1">
+            <img src="../images/banner2.png" alt="Slide 2">
+            <!-- <img src="image3.jpg" alt="Slide 3"> -->
+        </div>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+    </div>
+    </div>
+    <div class="headingProducts"><h1>Categories</h1></div>
+    <div class="categories-container" id="categories">
+      <!-- Categories will be dynamically inserted here -->
+  </div>
+    <div class="headingProducts"><h1>New Arrival</h1></div>
+    <div class="product-container" id="productContainer">
+    </div>
+    <div class="moreBtn"><div class="load-more-btn" id="myButton" >Show More</div></div>
+    <div class="footer">
+      <div class="aboutCompany">
+        <img src="../images/logoWhite.png" alt="logo" class="footerImg" />
+        <h3>ABOUT COMPANY</h3>
+        <p class="pOfAbout">
+          Rêve is a leading e-commerce platform dedicated to providing
+          affordable and quality products.
+        </p>
+      </div>
+      <div class="usefulLinks">
+        <div>
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="usefulLinks">
+        <div>
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="./orderList.html">My Orders</a></li>
+            <li><a href="./profile.html">profile</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="usefulLinks">
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Explicabo
+            </li>
+            <li>Phone : +92 1221121212</li>
+            <li>Email : 123@example.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="usefulLinks">
+        <div>
+          <h3>Social Media</h3>
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  class="fb"
+                  src="../images/fbIcon.png"
+                  alt="Facebook"
+                />Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="twit"
+                  src="../images/twitterIcon.png"
+                  alt="Twitter"
+                />Twitter</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="insta"
+                  src="../images/instaIcon.png"
+                  alt="Instagram"
+                />Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../services/imageSliderScript.js" async defer></script>
+    <script src="../services/productsScript.js"></script>
+    <script src="../services/loginCheckScript.js"></script>
+    <script>
+      document.getElementById("myButton").onclick = function () {
+        location.href = "./productsList.html";
+    };
+    </script>
+    <script src="../services/productsArray.js"></script>
+    <script src="../services/searchScript.js"></script>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+.mainDiv {
+  background-color: white;
+  height: 91.6vh;
+}
+
+#lottie-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.orderConfirmation {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.orderConfirmation h2 {
+  font-size: 30px;
+  font-family: fantasy;
+}
+
+.orderConfirmation p {
+  font-size: 17px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+.orderNumber {
+  color: rgb(22, 25, 223);
+}

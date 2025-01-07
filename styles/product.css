@@ -1,0 +1,289 @@
+.product-detail-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: white;
+  padding: 50px 4%;
+  gap: 50px;
+}
+
+.product-gallery {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  max-width: 700px;
+  /* border: 1px solid black; */
+}
+
+.main-image {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-left: 6px;
+}
+
+.thumbnail-row {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 15px;
+  gap: 10px;
+}
+
+.thumbnail {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+  transition: border-color 0.3s ease;
+}
+
+.thumbnail:hover {
+  border-color: #7b7b7b;
+}
+
+.product-info {
+  max-width: 600px;
+  /* border: 1px solid black; */
+  width: 40%;
+  padding-right: 50px;
+}
+
+.product-title {
+  font-size: 2.1rem;
+  margin-bottom: 15px;
+  font-family: fantasy;
+}
+
+.product-price {
+  font-size: 1.8rem;
+  color: #3b3c3e;
+  margin-bottom: 25px;
+  font-family: fantasy;
+  font-weight: 600;
+}
+.priceSet {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.product-Price {
+  font-size: 1.8rem;
+  color: #3b3c3e;
+  margin-bottom: 25px;
+  font-family: fantasy;
+  font-weight: 600;
+}
+
+.product-description {
+  font-size: 1rem;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 35px;
+  line-height: 1.6;
+}
+
+.quantity-section {
+  margin-bottom: 30px;
+}
+
+.quantity-section label {
+  margin-right: 10px;
+  font-size: 1rem;
+  font-family: fantasy;
+  font-weight: 600;
+}
+
+.quantity-section input {
+  width: 60px;
+  padding: 5px;
+  font-size: 1rem;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* border: 1px solid black; */
+}
+
+.add-to-Cart,
+.buy-now {
+  padding: 15px 10px;
+  border: none;
+  width: 45%;
+  text-align: center;
+  border-radius: 23px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.add-to-Cart {
+  background-color: #929292;
+  color: white;
+}
+
+.add-to-Cart:hover {
+  background-color: #363636;
+}
+
+.buy-now {
+  background-color: #282828;
+}
+.buy-now a {
+  color: white;
+  text-decoration: none;
+}
+
+.buy-now:hover {
+  background-color: #000000;
+}
+
+.rating-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.stars {
+  display: flex;
+  align-items: center;
+}
+
+.star {
+  font-size: 30px;
+  color: #000000;
+}
+
+.star.empty {
+  color: #ccc;
+}
+
+.rating-text {
+  margin-left: 15px;
+  font-size: 1rem;
+  color: #555;
+}
+.name-stock {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+li::marker {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+}
+.reviewAndproductlist {
+  display: flex;
+  flex-direction: column;
+}
+
+.reviews-container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 5%;
+  background-color: white;
+}
+
+.review-summary {
+  display: flex;
+  justify-content: space-between;
+  /* margin-bottom: 20px; */
+}
+
+.rating-bars {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.rating-row .bar {
+  width: 150px;
+  height: 10px;
+  background: #ddd;
+  margin: 0 10px;
+  position: relative;
+  border-radius: 10px;
+}
+
+.rating-row .fill {
+  height: 100%;
+  border-radius: 10px;
+  background: rgb(31, 31, 31);
+}
+
+.overall-rating {
+  text-align: center;
+}
+
+.star-rating {
+  font-size: 30px;
+  color: #060505;
+}
+
+.star-rating .filled {
+  color: rgb(20, 20, 20);
+}
+
+.review-list {
+  margin-top: 20px;
+}
+
+.review-item {
+  border-bottom: 1px solid #2f2f2f;
+  padding: 10px 0;
+}
+
+@media screen and (max-width: 767px) {
+  .product-info {
+    width: 100%;
+    padding: 0;
+  }
+  .product-title {
+    font-size: x-large;
+    margin: 0;
+  }
+  .product-Price {
+    font-size: larger;
+  }
+  .product-price {
+    font-size: larger;
+  }
+  .priceSet {
+    height: 25px;
+  }
+  .name-stock {
+    margin-bottom: 10px;
+  }
+  .name-stock h3 {
+    font-size: medium;
+  }
+  .star-rating {
+    font-size: large;
+    margin: 0;
+    padding: 0;
+  }
+  .rating-section {
+    margin-bottom: 10px;
+  }
+  .product-description {
+    font-size: small;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  .quantity-section {
+    margin-bottom: 18px;
+  }
+  .product-detail-container {
+    padding: 10px;
+  }
+}

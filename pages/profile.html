@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="../styles/profileStyle.css" />
+    <link rel="stylesheet" href="../styles/headerStyle.css" />
+    <link rel="stylesheet" href="../styles/footerStyle.css" />
+  </head>
+  <body>
+    <div class="header">
+      <div class="logo">
+        <a href="../pages/home.html">
+          <img src="../images/logoWhite.png" alt="Rêve Logo" />
+        </a>
+        <input
+          type="search"
+          name="search"
+          id="search"
+          class="searchBox"
+          placeholder="What you are looking for?"
+        />
+      </div>
+      <div class="menu">
+        <ul class="menupoints">
+          <li><a href="./login.html">Login/Register</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="profile-container">
+      <div class="profile-card">
+        <div class="profileImage">
+          <img src="../images/watch.jpeg" alt="User Profile Picture" />
+        </div>
+        <div class="profileData">
+          <div>
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" />
+
+            <label for="email">Email</label>
+            <input type="email" id="email" />
+
+            <label for="phoneNumber">Phone number</label>
+            <input type="tel" id="phoneNumber" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="aboutCompany">
+        <img src="../images/logoWhite.png" alt="logo" class="footerImg" />
+        <h3>ABOUT COMPANY</h3>
+        <p class="pOfAbout">
+          Rêve is a leading e-commerce platform dedicated to providing
+          affordable and quality products.
+        </p>
+      </div>
+      <div class="usefulLinks">
+        <div>
+          <h3>Useful Links</h3>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="usefulLinks">
+        <div>
+          <h3>My Account</h3>
+          <ul>
+            <li><a href="./orderList.html">My Orders</a></li>
+            <li><a href="./profile.html">profile</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="usefulLinks">
+        <div>
+          <h3>Contact</h3>
+          <ul>
+            <li>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Explicabo
+            </li>
+            <li>Phone : +92 1221121212</li>
+            <li>Email : 123@example.com</li>
+          </ul>
+        </div>
+      </div>
+      <div class="usefulLinks">
+        <div>
+          <h3>Social Media</h3>
+          <ul>
+            <li>
+              <a href="#"
+                ><img
+                  class="fb"
+                  src="../images/fbIcon.png"
+                  alt="Facebook"
+                />Facebook</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="twit"
+                  src="../images/twitterIcon.png"
+                  alt="Twitter"
+                />Twitter</a
+              >
+            </li>
+            <li>
+              <a href="#"
+                ><img
+                  class="insta"
+                  src="../images/instaIcon.png"
+                  alt="Instagram"
+                />Instagram</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script src="../services/productsArray.js"></script>
+    <script src="../services/profileScript.js"></script>
+    <script src="../services/loginCheckScript.js"></script>
+  </body>
+</html>

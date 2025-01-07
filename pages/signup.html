@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>SignUp</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="icon"
+      href="../images/logoWhite.png"
+      type="image/x-icon"
+      sizes="64x64"
+    />
+    <link rel="stylesheet" href="../styles/signUp.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+
+    <div class="mainDiv">
+      <div class="container">
+        <div class="right-section"></div>
+        <div class="left-section">
+          <!-- <a class="home" href="./home.html">Home</a> -->
+          <div class="formBorder">
+            <h2 class="heading">Create your account</h2>
+            <p class="sub-heading">Join us today!</p>
+            <form>
+              <label for="full-name">Full Name</label>
+              <input type="text" placeholder="Full name" required />
+              <label for="email">Email</label>
+              <input type="email" placeholder="Email" required />
+              <div class="phone-number-container">
+                <label for="phone-number">Phone Number</label>
+                <div class="phone-input-wrapper">
+                  <span class="country-code">+92</span>
+                  <input
+                    type="tel"
+                    id="phone-number"
+                    name="phone-number"
+                    placeholder="Your number"
+                  />
+                </div>
+              </div>
+              <label for="password"> Password</label>
+              <input type="password" placeholder="Password" required />
+              <label for="confirm-password"> Confirm Password</label>
+              <input type="password" placeholder="Confirm password" required />
+              <div class="tAndc">
+                <p class="signUpButton">
+                  <input type="checkbox" name="agree" id="agree" required /> I
+                  agree with
+                  <a class="signUp" href="./termsAndConditions.html"
+                    >Terms & Conditions</a
+                  >
+                </p>
+              </div>
+              <button type="submit">Register</button>
+              <p class="signUpButton">
+                Already have an account?
+                <a href="./login.html" class="signUp">Login</a>
+              </p>
+            </form>
+            <div class="line-container">
+              <div class="line"></div>
+              <span class="line-text">or</span>
+              <div class="line"></div>
+            </div>
+            <div class="login-btn-container">
+              <a href="/auth/google" class="login-btn google-btn">
+                <img
+                  src="../images/googleIcon.png"
+                  alt="Google Icon"
+                  class="login-icon"
+                />
+                Login with Google
+              </a>
+              <a href="/auth/facebook" class="login-btn facebook-btn">
+                <img
+                  src="../images/fbIcon.png"
+                  alt="Facebook Icon"
+                  class="login-icon"
+                />
+                Login with Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="" async defer></script>
+  </body>
+</html>

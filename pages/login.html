@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="../styles/loginStyle.css" />
+    <link rel="icon" href="../images/logoWhite.png" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="mainDiv">
+      <div class="container">
+        <div class="right-section"></div>
+        <div class="left-section">
+          <!-- <a class="home" href="./home.html">Home</a> -->
+          <div class="formBorder">
+            <h2 class="heading">Welcome Back!</h2>
+            <p class="sub-heading">
+              Enter your details to sign in to your account
+            </p>
+            <form id="loginForm">
+              <input type="email" id="email" placeholder="Email" required />
+              <input
+                type="password"
+                id="password"
+                placeholder="Password"
+                required
+              />
+              <a class="forgetPass" href="./forgetPasword.html"
+                >Forgot Password?</a
+              >
+              <button type="submit">Login</button>
+              <p
+                class="error-message"
+                id="errorMessage"
+                style="color: red; display: none"
+              >
+                Incorrect email or password
+              </p>
+              <p class="signUpButton">
+                Don't have an account?
+                <a href="./signup.html" class="signUp">Sign Up</a>
+              </p>
+            </form>
+            <div class="line-container">
+              <div class="line"></div>
+              <span class="line-text">or</span>
+              <div class="line"></div>
+            </div>
+            <div class="login-btn-container">
+              <a href="/auth/google" class="login-btn google-btn">
+                <img
+                  src="../images/googleIcon.png"
+                  alt="Google Icon"
+                  class="login-icon"
+                />
+                Login with Google
+              </a>
+              <a href="/auth/facebook" class="login-btn facebook-btn">
+                <img
+                  src="../images/fbIcon.png"
+                  alt="Facebook Icon"
+                  class="login-icon"
+                />
+                Login with Facebook
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../services/loginScript.js"></script>
+  </body>
+</html>

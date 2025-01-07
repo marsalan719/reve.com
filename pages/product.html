@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Rêve</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="../images/logoWhite.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../styles/homeStyle.css" />
+    <link rel="stylesheet" href="../styles/headerStyle.css">
+    <link rel="stylesheet" href="../styles/product.css" />
+    <link rel="stylesheet" href="../styles/footerStyle.css" />
+    
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="header">
+        <div class="logo">
+            <a href="../pages/home.html"
+            ><img src="../images/logoWhite.png" alt="Rêve Logo"
+          /></a>
+            <input type="search" name="search" id="search" class="searchBox" placeholder="What you are looking for?">
+        </div>
+        <div class="menu">
+          <ul class="menupoints">
+            <li><a href="./login.html">Login/Register</a></li>
+            <!-- <li><a href="#">Cart</a></li> -->
+            <!-- <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <section class="product-detail-container">
+        <div class="product-gallery">
+           
+            <div class="thumbnail-row">
+                <img src="../images/watch.jpeg" alt="Thumbnail 1" class="thumbnail">
+                <img src="../images/watch.jpeg" alt="Thumbnail 2" class="thumbnail">
+                <img src="../images/watch.jpeg" alt="Thumbnail 3" class="thumbnail">
+            </div>
+            <img src="../images/watch.jpeg" alt="Main Product Image" class="main-image">
+        </div>
+
+        <div class="product-info">
+            <div class="name-stock">
+                <h1 class="product-title">Smart watch</h1>
+                <ul>
+                    <li><h3>5 in stock</h3></li>
+                </ul></div>
+            <div class="priceSet"><p class="product-Price">Rs</p><p class="product-price">49.99</p></div>
+            <div class="rating-section">
+              <div class="star-rating" id="star-display-top">
+                &#9734;&#9734;&#9734;&#9734;&#9734;
+            </div>
+                <p class="rating-text"></p>
+            </div>
+            <p class="product-description">
+                This is a brief description of the product, highlighting its features and benefits. 
+                It is made of high-quality materials and is designed to meet your needs.
+            </p>
+
+            <div class="quantity-section">
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" value="1" min="1">
+            </div>
+
+            <div class="button-container">
+                <div class="add-to-Cart">Add to Cart</div>
+                <div class="buy-now">
+                  <a href="./buyNow.html" onclick="buyNow()">Buy Now</a>
+              </div>
+            </div>
+        </div>
+    </section>
+    <div class = "reviewAndproductlist">
+        <div class="reviews-container">
+            <h3>Reviews (<span id="review-count">0</span>)</h3>
+        
+            <div class="review-summary">
+                <div class="rating-bars">
+                    <div class="rating-row" data-stars="5">
+                        <span>5</span> <span class="star">&#9733;</span>
+                        <div class="bar"><div class="fill" style="width: 0%;"></div></div>
+                        <span class="count">0</span>
+                    </div>
+                    <div class="rating-row" data-stars="4">
+                        <span>4</span> <span class="star">&#9733;</span>
+                        <div class="bar"><div class="fill" style="width: 0%;"></div></div>
+                        <span class="count">0</span>
+                    </div>
+                    <div class="rating-row" data-stars="3">
+                        <span>3</span> <span class="star">&#9733;</span>
+                        <div class="bar"><div class="fill" style="width: 0%;"></div></div>
+                        <span class="count">0</span>
+                    </div>
+                    <div class="rating-row" data-stars="2">
+                        <span>2</span> <span class="star">&#9733;</span>
+                        <div class="bar"><div class="fill" style="width: 0%;"></div></div>
+                        <span class="count">0</span>
+                    </div>
+                    <div class="rating-row" data-stars="1">
+                        <span>1</span> <span class="star">&#9733;</span>
+                        <div class="bar"><div class="fill" style="width: 0%;"></div></div>
+                        <span class="count">0</span>
+                    </div>
+                </div>
+        
+                <div class="overall-rating">
+                    <h1><span id="average-rating">0</span>/5</h1>
+                    <div class="star-rating" id="star-display">
+                        &#9734;&#9734;&#9734;&#9734;&#9734;
+                    </div>
+                    <p><span id="total-reviews">0</span> Reviews</p>
+                </div>
+            </div>
+        
+            <div class="review-list" id="review-list">
+                <!-- Reviews will be inserted here dynamically -->
+            </div>
+        </div>
+        <!-- <div class="product-container" id="productContainer">
+        </div> -->
+    </div><div class="footer">
+        <div class="aboutCompany">
+          <img src="../images/logoWhite.png" alt="logo" class="footerImg" />
+          <h3>ABOUT COMPANY</h3>
+          <p class="pOfAbout">
+            Rêve is a leading e-commerce platform dedicated to providing
+            affordable and quality products.
+          </p>
+        </div>
+        <div class="usefulLinks">
+          <div>
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="usefulLinks">
+          <div>
+            <h3>My Account</h3>
+            <ul>
+              <li><a href="./orderList.html">My Orders</a></li>
+              <li><a href="./profile.html">profile</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="usefulLinks">
+          <div>
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Explicabo
+              </li>
+              <li>Phone : +92 1221121212</li>
+              <li>Email : 123@example.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="usefulLinks">
+          <div>
+            <h3>Social Media</h3>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    class="fb"
+                    src="../images/fbIcon.png"
+                    alt="Facebook"
+                  />Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="twit"
+                    src="../images/twitterIcon.png"
+                    alt="Twitter"
+                  />Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="insta"
+                    src="../images/instaIcon.png"
+                    alt="Instagram"
+                  />Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script src="../services/productsArray.js"></script>
+    <script src="../services/productDetailScript.js"></script>
+    <script src="../services/imageSwitchingScript.js" async defer></script>
+    <script src="../services/reviewsScript.js" async defer></script>
+    <script src="../services/loginCheckScript.js"></script>
+    <script>function buyNow() {
+      const product = {
+          title: document.querySelector('.product-title').innerText,
+          price: document.querySelector('.product-price').innerText,
+          quantity: document.querySelector('#quantity').value,
+          image: document.querySelector('.main-image').src
+      };
+      
+      localStorage.setItem('checkoutProduct', JSON.stringify(product));
+  }</script>
+  </body>
+</html>

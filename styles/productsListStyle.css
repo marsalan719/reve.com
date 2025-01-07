@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+html {
+  background-color: #ababab;
+}
+
+.product-container {
+  background-color: rgb(255, 255, 255);
+  padding: 0 4%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-cards {
+  display: flex;
+  width: 290px;
+  flex-direction: column;
+  /* background-color: #1f1f1f; */
+  align-items: center;
+  margin: 30px 15px;
+  padding: 17px 15px;
+  border-radius: 8%;
+  cursor: pointer;
+}
+.product {
+  text-decoration: none;
+}
+
+/* Hide extra products after 2 rows */
+.product-cards:nth-child(n + 9) {
+  display: none;
+}
+
+.product-cards img {
+  width: 257px;
+  height: 290px;
+  border-radius: 8%;
+  border: 1px solid #e1e1e1;
+  /* margin-left: 1.5%; */
+  transition: transform 0.3s ease;
+}
+.product-cards img:hover {
+  transform: scale(1.1);
+}
+.name-price {
+  /* border: 1px solid rgb(22, 21, 21); */
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3%;
+  /* padding: 2%; */
+}
+
+.name-price h2 {
+  font-size: 110%;
+  color: rgb(0, 0, 0);
+  max-width: 230%;
+}
+
+.name-price p {
+  color: rgb(0, 0, 0);
+  font-size: 110%;
+  font-weight: 600;
+}
+
+.description {
+  color: rgb(0, 0, 0);
+  font-size: 90%;
+  margin-top: 5%;
+}
+
+.add-to-cart {
+  margin-top: 5%;
+  font-size: 120%;
+  font-weight: 600;
+  color: #fcfcfc;
+  background-color: #3b3c3e;
+  padding: 5% 10%;
+  border-radius: 13px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+}
+.add-to-cart:hover {
+  background-color: #1f1f1f;
+}
+
+@media screen and (max-width: 767px) {
+  .product-container {
+    /* border: 1px solid black; */
+    padding: 0;
+  }
+  .product-cards {
+    /* border: 1px solid black; */
+    width: 40%;
+    margin: 0;
+  }
+  .product-cards img {
+    object-fit: cover;
+    width: 130px;
+    height: 180px;
+  }
+  .name-price {
+    font-size: 85%;
+    border: 1px solid black;
+    max-height: 20px;
+    overflow: hidden;
+  }
+  .description {
+    font-size: 75%;
+  }
+  .add-to-cart {
+    font-size: 85%;
+  }
+}

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../styles/butNowStyle.css" />
+    <link rel="stylesheet" href="../styles/headerStyle.css" />
+    <link rel="stylesheet" href="../styles/footerStyle.css" />
+
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div class="header">
+        <div class="logo">
+          <a href="../pages/home.html"
+          ><img src="../images/logoWhite.png" alt="Rêve Logo"
+        /></a>
+            <input type="search" name="search" id="search" class="searchBox" placeholder="What you are looking for?">
+        </div>
+        <div class="menu">
+          <ul class="menupoints">
+            <li><a href="./login.html">Login/Register</a></li>
+            <!-- <li><a href="#">Cart</a></li> -->
+            <!-- <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="checkout-container">
+        <div class="checkout-left">
+            <h2>Contact Information</h2>
+            <form>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="text" id="fullName" placeholder="Full Name" required>
+    
+                <div class="row">
+                    <!-- <select required>
+                        <option>Select Country</option>
+                        <option>United States</option>
+                        <option>United Kingdom</option>
+                    </select> -->
+                    <input type="text" id="phone" placeholder="+92 12345678" required>
+                </div>
+    
+                <h2>Shipping Address</h2>
+                <input type="text" id="street" placeholder="Street Address" required>
+                <div class="row">
+                    <select id="country" required>
+                        <!-- <option>Select Country</option> -->
+                        <option value="Pakistan">Pakistan</option>
+                    </select>
+                </div>
+                <div class="row">
+                    <input type="text" id="city" placeholder="City" required>
+                    <input type="text" id="state" placeholder="State" required>
+                    <input type="text" id="postalCode" placeholder="Postal Code" required>
+                </div>
+    
+                <!-- <h2>Billing Address</h2>
+                <div class="billing-options">
+                    <label>
+                        <input type="radio" name="billing" checked> Same As Above
+                    </label>
+                    <label>
+                        <input type="radio" name="billing"> Use a Different Billing Address
+                    </label>
+                </div> -->
+    
+                <h2>Payment Method</h2>
+                <div class="payment-methods">
+                    <button type="button" class="selected">Cash on Delivery</button>
+                    <button type="button">Pay with Payfast</button>
+                </div>
+            </form>
+        </div>
+    
+        <div class="checkout-right">
+            <div class="order-item">
+                <img src="../images/watch.jpeg" alt="Product">
+                <div>
+                    <h3>Smart watch</h3>
+                    <p>Rs 100</p>
+                    <p>Qty: 1</p>
+                </div>
+            </div>
+    
+            <div class="order-summary">
+                <h2>Order Summary</h2>
+                <p>Sub Total: <span class="subtotal">Rs100</span></p>
+                <p>Shipping Fee: <span>Rs 100</span></p>
+                
+                <!-- <div class="promo">
+                    <input type="text" placeholder="Enter the Promo code">
+                    <button>Apply</button>
+                </div>
+     -->
+                <h3>Total: <span class="total">Rs125</span></h3>
+                <button class="confirm-order" onclick="return validateCheckout()">
+                  <a href="./confirmOrder.html" class="buyNowLink">Confirm Order</a>
+              </button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="aboutCompany">
+          <img src="../images/logoWhite.png" alt="logo" class="footerImg" />
+          <h3>ABOUT COMPANY</h3>
+          <p class="pOfAbout">
+            Rêve is a leading e-commerce platform dedicated to providing
+            affordable and quality products.
+          </p>
+        </div>
+        <div class="usefulLinks">
+          <div>
+            <h3>Useful Links</h3>
+            <ul>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms & Conditions</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="usefulLinks">
+          <div>
+            <h3>My Account</h3>
+            <ul>
+              <li><a href="./orderList.html">My Orders</a></li>
+              <li><a href="./profile.html">profile</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="usefulLinks">
+          <div>
+            <h3>Contact</h3>
+            <ul>
+              <li>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Explicabo
+              </li>
+              <li>Phone : +92 1221121212</li>
+              <li>Email : 123@example.com</li>
+            </ul>
+          </div>
+        </div>
+        <div class="usefulLinks">
+          <div>
+            <h3>Social Media</h3>
+            <ul>
+              <li>
+                <a href="#"
+                  ><img
+                    class="fb"
+                    src="../images/fbIcon.png"
+                    alt="Facebook"
+                  />Facebook</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="twit"
+                    src="../images/twitterIcon.png"
+                    alt="Twitter"
+                  />Twitter</a
+                >
+              </li>
+              <li>
+                <a href="#"
+                  ><img
+                    class="insta"
+                    src="../images/instaIcon.png"
+                    alt="Instagram"
+                  />Instagram</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <script src="../services/productsArray.js"></script>
+    <script src="../services/orderSummaryScript.js" async defer></script>
+    <script src="../services/confirmOrderScript.js"></script>
+    <script src="../services/loginCheckScript.js"></script>
+    <script>document.addEventListener('DOMContentLoaded', function () {
+      const product = JSON.parse(localStorage.getItem('checkoutProduct'));
+  
+      if (product) {
+          document.querySelector('.order-item img').src = product.image;
+          document.querySelector('.order-item h3').innerText = product.title;
+          document.querySelector('.order-item p:nth-child(2)').innerText ="Rs "+ product.price;
+          document.querySelector('.order-item p:nth-child(3)').innerText = 'Qty: ' + product.quantity;
+          document.querySelector('.subtotal').innerText = "Rs "+product.price ;
+          document.querySelector('.total').innerText = "Rs "+ (parseInt(product.price) + 100);
+      }
+    });
+    function validateCheckout() {
+    const fields = [
+        'email',
+        'fullName',
+        'phone',
+        'street',
+        'country',
+        'city',
+        'state',
+        'postalCode'
+    ];
+
+    let isValid = true;
+
+    fields.forEach(function (field) {
+        const input = document.getElementById(field);
+        if (!input || !input.value.trim()) {
+            input.classList.add('error');
+            isValid = false;
+        } else {
+            input.classList.remove('error');
+        }
+    });
+
+    if (!isValid) {
+        alert('Please fill out all required fields before proceeding.');
+    }
+    return isValid; // Prevents navigation if any field is empty
+    }
+    document.querySelectorAll('input, select').forEach(function (input) {
+    input.addEventListener('input', function () {
+        if (input.value.trim()) {
+            input.classList.remove('error');
+        }
+    });
+});
+    </script>
+
+  </body>
+</html>

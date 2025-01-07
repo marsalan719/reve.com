@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 90%;
+  margin: 0 auto;
+}
+html {
+  background-color: #ababab;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 80px;
+  margin-left: 2.5vw;
+}
+
+.logo .searchBox {
+  width: 20vw;
+  margin-left: 4vw;
+  height: 30px;
+  border-radius: 20px;
+  padding: 0 1vw;
+  border: 1px solid white;
+  font-size: medium;
+  font-family: serif;
+}
+.menupoints {
+  display: flex;
+  list-style: none;
+}
+
+.menupoints li a {
+  margin-right: 3vw;
+  color: white;
+  text-decoration: none;
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+  html {
+    width: 100vw;
+  }
+  .logo img {
+    width: 40px;
+  }
+  .logo .searchBox {
+    width: 80%;
+    height: 16px;
+    padding: 0 2vw;
+    border: 1px solid white;
+    font-size: 15%;
+  }
+  .menupoints li a {
+    margin-right: 3vw;
+    font-size: 70%;
+  }
+}
