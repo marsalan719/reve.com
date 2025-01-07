@@ -112,7 +112,6 @@ html {
   }
   .name-price {
     font-size: 85%;
-    border: 1px solid black;
     max-height: 20px;
     overflow: hidden;
   }
