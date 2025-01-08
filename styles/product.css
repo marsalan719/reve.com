@@ -283,6 +283,9 @@ li::marker {
   .quantity-section {
     margin-bottom: 18px;
   }
+  #quantity {
+    height: 30px;
+  }
   .product-detail-container {
     padding: 10px;
   }

@@ -64,7 +64,7 @@
     <div class="footer">
       <div class="aboutCompany">
         <img src="../images/logoWhite.png" alt="logo" class="footerImg" />
-        <h3>ABOUT COMPANY</h3>
+        <h3>ABOUT US</h3>
         <p class="pOfAbout">
           Rêve is a leading e-commerce platform dedicated to providing
           affordable and quality products.
@@ -138,11 +138,13 @@
       </div>
     </div>
     <script src="../services/imageSliderScript.js" async defer></script>
+    <script src="../services/productsArray.js"></script>
     <script src="../services/productsScript.js"></script>
     <script src="../services/loginCheckScript.js"></script>
     <script>
       document.getElementById("myButton").onclick = function () {
-        location.href = "./productsList.html";
+        const nam = "All Products"
+        location.href = `./productsList.html?pageName=${nam}`;
     };
     </script>
     <script src="../services/productsArray.js"></script>

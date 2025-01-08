@@ -41,23 +41,6 @@ function buyNow(productName) {
 // Display products on page load
 window.addEventListener("load", displayProducts);
 
-const categories = [
-  {
-    name: "T-shirts",
-    image:
-      "https://rukminim2.flixcart.com/image/850/1000/xif0q/t-shirt/u/f/b/l-fk-sne-men-99-black-monkey-boys-original-imaghq6haqghymrj.jpeg",
-  },
-  {
-    name: "Customized Shirts",
-    image:
-      "https://www.inkfactory.pk/wp-content/uploads/2022/10/Mint-T-Shirt-005.jpg",
-  },
-  {
-    name: "Drop Sholders",
-    image: "https://veirdo.in/cdn/shop/files/Artboard8.png?v=1724158576",
-  },
-];
-
 const categoryContainer = document.getElementById("categories");
 
 // Render categories dynamically
@@ -71,7 +54,7 @@ categories.forEach((category) => {
 
   // Redirect to products page with category as query param
   categoryDiv.addEventListener("click", () => {
-    window.location.href = `../pages/productsList.html?category=${category.name}`;
+    window.location.href = `../pages/productsList.html?category=${category.name}&pageName=${category.name}`;
   });
 
   categoryContainer.appendChild(categoryDiv);

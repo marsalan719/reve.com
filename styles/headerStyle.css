@@ -49,6 +49,11 @@ html {
   margin-right: 3vw;
   color: white;
   text-decoration: none;
+  transition: transform 0.3s ease;
+}
+.menupoints li a:hover {
+  color: #ababab;
+  transform: scale(1.1);
 }
 
 @media screen and (max-width: 767px) {
@@ -59,17 +64,17 @@ html {
     width: 100vw;
   }
   .logo img {
-    width: 40px;
+    width: 50px;
   }
   .logo .searchBox {
-    width: 80%;
-    height: 16px;
-    padding: 0 2vw;
+    width: 130px;
+    height: 19px;
+    padding: 0 1.2vw;
     border: 1px solid white;
-    font-size: 15%;
+    font-size: 9px;
   }
   .menupoints li a {
     margin-right: 3vw;
-    font-size: 70%;
+    font-size: 80%;
   }
 }

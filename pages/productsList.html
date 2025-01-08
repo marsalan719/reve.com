@@ -23,6 +23,21 @@
         </div>
       </div>
     </div>
+    <div class="listHeading outter">
+      <div class="listHeading innerDiv">
+          <p id="heading">*</p>
+          <div class="menu-container">
+              <div class="hamburger">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+              </div>
+              <div class="dropdown" id="dropdown-menu">
+                
+              </div>
+          </div>
+      </div>
+  </div>
     <div class="product-container" id="productContainer">
       <!-- Products will be dynamically inserted here -->
     </div>
@@ -105,6 +120,16 @@
       <script src="../services/productsArray.js"></script>
     <script src="../services/productListScript.js"></script>
     <script src="../services/loginCheckScript.js"></script>
+    <script>
+        const dropdownMenu = document.getElementById('dropdown-menu');
+
+        categories.forEach(category => {
+            const link = document.createElement('a');
+            link.href = `../pages/productsList.html?category=${category.name}&pageName=${category.name}`;
+            link.textContent = category.name;
+            dropdownMenu.appendChild(link);
+        });
+    </script>
     
   </body>
 </html>
