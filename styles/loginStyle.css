@@ -35,7 +35,8 @@ html {
 } */
 .right-section {
   flex: 2;
-  background: url("../images/loginImage.png") no-repeat center center;
+  background: url("https://res.cloudinary.com/dhe5dpi3s/image/upload/v1736412832/reve/ub11wdiwrjky8cuikmce.png")
+    no-repeat center center;
   background-size: cover;
   background-position: center;
 

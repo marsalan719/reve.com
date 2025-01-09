@@ -36,7 +36,8 @@ html {
 } */
 .right-section {
   flex: 1;
-  background: url("../images/signUpImage.png") no-repeat center center;
+  background: url("https://res.cloudinary.com/dhe5dpi3s/image/upload/v1736412857/reve/hwtikfqdpbgkawxbbhnb.png")
+    no-repeat center center;
   background-size: cover;
   background-position: center;
 }
